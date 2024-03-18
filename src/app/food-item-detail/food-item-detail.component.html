@@ -1,0 +1,12 @@
+<div *ngIf="foodItemDetails" class="container">
+    <h2>{{ foodItemDetails.name }} Nutrition Details (per 100g)</h2>
+    <nav class="nutrition-grid">
+      <div><span>Calories:</span> {{ foodItemDetails.calories }}</div>
+      <div><span>Protein:</span> {{ foodItemDetails.protein_g }}g</div>
+      <div><span>Fat:</span> {{ foodItemDetails.fat_total_g }}g</div>
+      <div><span>Carbohydrates:</span> {{ foodItemDetails.carbohydrates_total_g }}g</div>
+      <div><span>Fiber:</span> {{ foodItemDetails.fiber_g }}g</div>
+      <div><span>Sugar:</span> {{ foodItemDetails.sugar_g }}g</div>
+    </nav>
+</div>
+  

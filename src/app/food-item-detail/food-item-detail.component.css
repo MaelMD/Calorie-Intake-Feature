@@ -1,0 +1,40 @@
+/* food-item-detail.component.css */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+  background: aliceblue;
+  box-shadow: 15px 15px 30px #bebebe,
+  -15px -15px 30px #ffffff;
+}
+  
+  .container > * {
+    margin: 10px 0; /* Spacing between elements */
+  }
+  
+  h2::first-letter {
+    text-transform: uppercase;
+  }
+  
+  .container h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .container p span {
+    font-weight: bold;
+  }

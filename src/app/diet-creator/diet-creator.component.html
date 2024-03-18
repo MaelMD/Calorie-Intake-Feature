@@ -1,0 +1,30 @@
+<div class="centered-container">
+  <router-outlet></router-outlet>
+    <div *ngFor="let item of paginatedItems" class="food-item">
+        <p>{{ item.name }}</p>
+        <div class="btn-grp">
+          <a [routerLink]="['/food-item-detail', item.name]" class="info-button"><i class="pi pi-info"></i></a>
+          <button (click)="addToDiet(item)" class="add-button"><i class="pi pi-plus"></i></button>
+        </div>
+      </div>
+    
+      <div class="pagination">
+        <button (click)="setPage(currentPage - 1)" *ngIf="currentPage > 1" class="prev"><i class="pi pi-arrow-left"></i></button>
+        <button (click)="setPage(currentPage + 1)" *ngIf="currentPage * itemsPerPage < foodItems.length" class="next"><i class="pi pi-arrow-right"></i></button>
+      </div>
+
+    <div class="diet-section">
+      <div class="basket">
+        <h2>Your Diet</h2>
+        <div *ngFor="let item of selectedItems" class="diet-item">
+            <p>{{ item.name }}</p>
+            <button (click)="removeFromDiet(item)" class="remove-button">
+              <i class="pi pi-trash"></i>
+            </button>            
+        </div>
+        <div class="total-calories">Total Calories: {{ getTotalCalories() }}</div>
+      </div>
+
+      <app-test-chart *ngIf="show"></app-test-chart>
+    </div>
+  </div>

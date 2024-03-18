@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'getM';
+  title = 'getMgaddar';
+  totalNutrients = { protein: 0, carbs: 0, sugar: 0 };
 }

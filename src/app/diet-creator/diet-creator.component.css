@@ -1,0 +1,152 @@
+/* src/app/diet-creator/diet-creator.component.css */
+.food-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .info-button {
+    display: inline-block;
+    background-color: #007bff; /* Bootstrap primary button color for reference */
+    color: white;
+    text-align: center;
+    padding: 9px 20px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.2s ease-in-out;
+    margin-right: 5px;
+  }
+  
+  .info-button:hover, .info-button:focus {
+    background-color: #0056b3; /* Darken button on hover/focus for interaction feedback */
+    text-decoration: none; /* Ensure underline doesn't reappear on hover/focus */
+    color: white;
+  }
+  
+
+  .info-button {
+    align-self: flex-end;
+  }
+  
+  .diet-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .food-item:hover {
+    scale: 1.01;
+    transition: ease-in-out 0.4s;
+  }
+  
+  .food-item:last-child {
+    border-bottom: none;
+  }
+  
+  .food-item p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  .diet-section {
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  
+  .diet-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .total-calories {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #4CAF50;
+    background-color: #e8f5e9;
+  }
+
+.remove-button {
+    background-color: #f44336; /* Red color for the remove action */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1px 25px 1px 25px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px; /* Add some space between the text and the button */
+  }
+
+  
+  .remove-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .pagination button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .prev {
+    margin-right: 10px;
+  }
+
+  .pagination button:hover {
+    background-color: dodgerblue;
+  }
+  
+  .centered-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background: aliceblue;
+    border: 1px solid white;
+    box-shadow: 5px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    overflow: auto;
+  }
+
+  p::first-letter {
+    text-transform: capitalize;
+  }
+
+  .basket {
+    min-width: 400px
+  }
